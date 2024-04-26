@@ -128,3 +128,42 @@ a:hover {
     text-decoration: underline;
     transition: color 0.25s ease;
 }
+
+    /* -- stylization of contact -- */
+
+ol, ul {
+    list-style: none;
+}
+
+button {
+    background-color: #DE8B5D;
+    color: #FFFFFF;
+    background-image: 
+    linear-gradient(243deg, 
+    #8C51D6 0%, 
+    rgba(222, 139, 93, 0.008) 74%);
+
+    font-family: 'Martian Mono', sans-serif;
+
+    margin-top: 32px;
+
+    width: 150px;
+    height: 48px;
+
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    text-align: center;
+
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.5s;
+}
