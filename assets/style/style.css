@@ -30,11 +30,7 @@
 
 body {
     background: var(--bg-main);
-}
 
-    /* -- stylization of container -- */
-
-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,17 +38,18 @@ main {
     height: 100vh;
 }
 
-.container {
+    /* -- stylization of container -- */
+
+main {
     background: var(--bg-container);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    width: 37.5rem;
-    height: 39.6875rem;
-    padding: 3.625rem;
+    width: 38rem;
+    height: 38rem;
+
+    padding: 4rem;
 
     border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
@@ -65,4 +62,69 @@ main {
     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile img {
+    width: 6rem;
+    
+    border-radius: 100%;
+    border-color: rgba(255, 255, 255, 0.141);
+    border-style: solid;
+    border-width: 1px;
+
+    margin-bottom: 1.5rem;
+
+    transition: none;
+}
+
+.profile .txt-gradient {
+    background-image: 
+    linear-gradient(142deg, 
+    #8C51D6 0%, 
+    #DE8B5D 43%);
+    
+
+    text-transform: uppercase;
+    letter-spacing: 0.225rem;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile h1 {
+    color: #fff;
+
+    width: calc(100% + 0.025rem);
+
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.025rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.profile .txt-resume {
+    color: rgba(255, 255, 255, 0.612);
+    font-family: 'Martian Mono', monospace;
+    font-size: 1em;
+    line-height: 2;
+    font-weight: 200;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #9B8DE4;
+
+    text-decoration: underline;
+    transition: color 0.25s ease;
 }
