@@ -67,7 +67,7 @@ main {
 .profile {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5625rem;
 }
 
 .profile img {
@@ -131,7 +131,9 @@ a:hover {
 
     /* -- stylization of contact -- */
 
-ol, ul {
+ol, 
+ul,
+li {
     list-style: none;
 }
 
@@ -145,12 +147,12 @@ button {
 
     font-family: 'Martian Mono', sans-serif;
 
-    margin-top: 32px;
+    margin-top: 2rem;
 
-    width: 150px;
-    height: 48px;
+    width: 9.375rem;
+    height: 3rem;
 
-    border-radius: 25px;
+    border-radius: 1.5625rem;
 
     display: flex;
     justify-content: center;
@@ -166,4 +168,38 @@ button:hover {
     cursor: pointer;
     transform: scale(1.04);
     transition: 0.5s;
+}
+
+    /* -- stylization nav -- */
+
+.hr {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.612);
+    margin-top: 2rem;
+    margin-bottom: 2.1875rem;
+}
+
+.nav-row ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1.75rem;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.icons .label {
+    display: none;
+}
+
+.icons ul li a img {
+    width: 1.75rem;
+}
+
+.icons ul li a img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
