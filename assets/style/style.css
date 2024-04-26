@@ -1,0 +1,33 @@
+    /* -- font import -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+    /* -- default / resset settings -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font-size: 62.5%; */
+
+    /* -- colors -- */
+
+    --bg-main: #242329;
+    --bg-container: #28272E;
+
+    /* -- font  -- */
+
+    font-family: 'Martian Mono', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--bg-main);
+}
